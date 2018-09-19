@@ -41,6 +41,7 @@ class Landing extends React.Component {
     <div className="imgDiv">
       {/* <h2>Feel Alive Films</h2> */}
       <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed"/>
+      <div className="contact"><p>Contact:</p></div>
     </div>;
 
 
