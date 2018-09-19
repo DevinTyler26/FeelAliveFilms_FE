@@ -6,6 +6,9 @@ import PropTypes from 'prop-types';
 import AuthForm from '../auth-form/auth-form';
 import * as authActions from '../../actions/auth';
 import * as routes from '../../lib/routes';
+import fafLogo from '../../assets/FAF_Logo_Final_Dark.png';
+
+import './landing.scss';
 
 const mapStateToProps = state => ({
   token: state.token,
@@ -30,14 +33,16 @@ class Landing extends React.Component {
       .then(() => {
         this.props.history.push(routes.DASHBOARD_ROUTE);
       })
-      .catch(console.error);
+      .catch(console.error); 
   }
 
   renderJSX = (pathname) => {
     const rootJSX = // eslint-disable-line
-    <div>
-      <h2>Welcome to myGarage where you can keep track of all of your vehicles </h2>
+    <div className="imgDiv">
+      {/* <h2>Feel Alive Films</h2> */}
+      <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed"/>
     </div>;
+
 
     const signUpJSX = // eslint-disable-line
     <div>

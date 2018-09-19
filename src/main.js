@@ -10,6 +10,8 @@ import thunk from './lib/middleware/redux-thunk';
 import reporter from './lib/middleware/redux-reporter';
 import session from './lib/middleware/redux-session';
 
+import './style/main.scss';
+
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk, reporter, session)));
 const root = document.createElement('div');
 document.body.appendChild(root);
