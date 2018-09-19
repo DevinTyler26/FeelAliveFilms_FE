@@ -18,7 +18,7 @@
     "pretest": "npm run build && npm run start && wait-on http://localhost:8080",
     "posttest": "pkill -f http-server",
     "start": "npm run build && node index.js",
-    "postinstall": "node ./src/heroku-build.js",
+    "postinstall": "node ./heroku-build.js",
     "heroku-prebuild": "npm uninstall cypress",
     "heroku-postbuild": "webpack --progress --config webpack.prod.js"
   },
