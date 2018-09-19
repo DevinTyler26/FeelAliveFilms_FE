@@ -1,0 +1,24 @@
+img {
+  -webkit-filter: drop-shadow(10px 10px 100px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+html, body
+{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.imgDiv {
+    position:relative;
+    height: 100%;
+    width:100%;
+    .faflogo {
+      width: 60%;
+      position: absolute;
+      z-index: 99;
+      margin: auto;
+      top: 3500%; left: 0; bottom: 0; right: 0;
+    }
+}

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as authActions from '../../actions/auth';
 import * as routes from '../../lib/routes';
-import googleBtn from '../../assets/google-btn-light.png';
+// import googleBtn from '../../assets/google-btn-light.png';
 import './navbar.scss';
 
 const mapStateToProps = state => ({
@@ -32,15 +32,15 @@ class Navbar extends React.Component {
     const JSXNotLoggedIn = //eslint-disable-line
     <ul>
       <li><Link to={routes.ROOT_ROUTE}>Home</Link></li>
-      <li><Link to={routes.LOGIN_ROUTE}>Login</Link></li>
-      <li><Link to={routes.SIGNUP_ROUTE}>Sign up</Link></li>
-      <li><a href={ this.setGoogleOAuthUrl() }><img src={ googleBtn } /></a></li>
+      <li><a href="https://www.youtube.com/channel/UCRaEE_1f985g5ZGhzI2STfA"> YouTube </a></li>            
+      {/* <li><Link to={routes.LOGIN_ROUTE}>Login</Link></li>
+      <li><Link to={routes.SIGNUP_ROUTE}>Sign up</Link></li> */}
+      {/* <li><a href={ this.setGoogleOAuthUrl() }><img src={ googleBtn } /></a></li> */}
     </ul>;
     const JSXLoggedIn = //eslint-disable-line
     <ul>
       <li><Link to={routes.DASHBOARD_ROUTE}> Dashboard </Link></li>
       <li><Link to={routes.PROFILE_ROUTE}> Profile </Link></li>
-      {/* <li><Link to={routes.GARAGE_ROUTE}> Garages </Link></li>       */}
     </ul>;
     return loggedIn ? JSXLoggedIn : JSXNotLoggedIn;
   }
@@ -49,7 +49,6 @@ class Navbar extends React.Component {
     const { loggedIn, doLogout } = this.props;
     return (
       <header className="header">
-        <h1>myGarage</h1>
           <nav>
             {this.renderJSX(loggedIn)}
           </nav>

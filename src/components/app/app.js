@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-
+import Favicon from 'react-favicon';
 import Landing from '../landing/landing';
 import Dashboard from '../dashboard/dashboard';
 import AuthRedirect from '../auth-redirect/auth-redirect';
 import Profile from '../profile/profile';
 // import Garage from '../garage/garage';
 import Navbar from '../navbar/navbar';
+import './app.scss';
+import favicon from '../../assets/favicon.ico';
 
 export default class App extends React.Component {
   render() {
@@ -14,6 +16,7 @@ export default class App extends React.Component {
       <div className="app">
         <BrowserRouter>
           <div>
+            <Favicon url={ favicon } />
             <Navbar />
             <Route exact path="*" component={AuthRedirect} />
             <Route exact path="/" component={Landing} />

@@ -17,7 +17,7 @@ webpackConfig.output = {
 
 webpackConfig.plugins = [
   new HtmlWebpackPlugin({
-    title: 'myGarage lab 36 - 40',
+    title: 'Feel Alive Films',
   }),
   new DefinePlugin({
     API_URL: JSON.stringify(process.env.API_URL),
@@ -29,7 +29,7 @@ webpackConfig.module = {};
 
 webpackConfig.module.rules = [
   {
-    test: /\.(png|svg|jpg|gif)$/i,
+    test: /\.(png|svg|jpg|gif|ico)$/i,
     use: ['file-loader'],
   },
   {

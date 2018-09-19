@@ -1,0 +1,106 @@
+@import 'vars';
+
+// content
+html, body {
+  max-width:inherit;
+  // position: relative; 
+  font-family: $font-primary;
+  background-color: #000;
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+head, script, link  { display: none; }
+span,em,strong { display: inline; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+body {
+  // background: $color-white;
+  font-size: 16px;
+}
+
+#root {
+  min-height: 900px;
+}
+
+blockquote {
+  border-left: $pad solid $color-lightgrey;
+  padding-left: $pad;
+}
+
+@for $i from 6 through 1 {
+  h#{$i} {
+    font-size: 9/($i + 2) * 1em;;
+  }
+}
+
+
+// form
+label {
+  display: flex;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: $pad;
+}
+
+textarea, input, select {
+  background: $color-input-field;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  transition: 350ms all;
+
+  &:hover {
+    background: $color-input-focus;
+    color: $color-black;
+  }
+
+  &::placeholder {
+    color: $color-black;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button,input[type="submit"] {
+  font-family: $font-primary;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  height: 60px;
+  background: #000;
+  border-top: none;
+  margin-top: 100px;
+
+  a {
+    padding-top: 10px;
+    padding-left: 3px;
+    display: inline-block;
+    color: $color-white;
+    list-style-type: none;
+
+    &:hover {
+      color: $color-input-focus;
+    }
+  }
+}
+
+// lists
+// ul,ol,li { margin-left: $pad * 2; }
+li { display: list-item; }
+ul li { list-style: disc; }
+ol li { list-style: decimal; }
+ol ol li , ul ol li { list-style: lower-alpha; }
+ol ul li , ul ul li { list-style: square; }
+
+.clearfix {
+  clear: both;
+}
