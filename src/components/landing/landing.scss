@@ -1,10 +1,25 @@
 .landing {
-  display:block; margin:6% auto; text-align:center;
+  padding: 6%;
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  background-color:rgba(0,0,0,0.3);
+  height: 1000px;
 }
+
+.background{
+  background-image: url(../../assets/fafBackground.png);
+  background-size: cover;
+  width: 100%;
+  resize: both;
+  overflow: scroll;
+}
+
 img {
   width: 80%;
   -webkit-filter: drop-shadow(10px 10px 100px #222);
   filter: drop-shadow(5px 5px 5px #222);
+  opacity: .9;
 }
 
 .contact{
@@ -38,18 +53,18 @@ img {
   }
   86% {
     transform: scale(1.04);    
-    opacity: .9;    
+    opacity: .6;    
   }
   100% {
     transform: scale(1);
-    opacity: 1;
+    opacity: .9;
     // background-color: yellow;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .landing {
-    margin:2% auto;
+    margin:0 auto;
   }
   img {
     width: 60%;
