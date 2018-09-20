@@ -1,24 +1,54 @@
+.landing {
+  display:block; margin:6% auto; text-align:center;
+}
 img {
+  width: 80%;
   -webkit-filter: drop-shadow(10px 10px 100px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
 
-html, body
-{
-    height: 100%;
-    margin:0;
-    padding:0;
+.contact{
+  color: white;
+  margin-top: 2%;
+  font-size: 200%;
 }
 
-.imgDiv {
-    position:relative;
-    height: 100%;
-    width:100%;
-    .faflogo {
-      width: 60%;
-      position: absolute;
-      z-index: 99;
-      margin: auto;
-      top: 3500%; left: 0; bottom: 0; right: 0;
-    }
+.element {
+  margin: 0 auto;
+  animation-name: stretch;
+  animation-duration: 2.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: .75;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.01);
+    // background-color: red;
+    // border-radius: 100%;
+  }
+  50% {
+    // background-color: orange;
+    // border-radius: 100%;    
+  }
+  86% {
+    transform: scale(1.04);    
+  }
+  100% {
+    transform: scale(1);
+    // background-color: yellow;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 60%;
+  }
+  .contact{
+    margin-top: 4%;
+  }
 }

@@ -37,11 +37,12 @@ class Landing extends React.Component {
   }
 
   renderJSX = (pathname) => {
-    const rootJSX = // eslint-disable-line
-    <div className="imgDiv">
-      {/* <h2>Feel Alive Films</h2> */}
-      <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed"/>
-      <div className="contact"><p>Contact:</p></div>
+    const rootJSX = // eslint-disable-line 
+
+    <div className="landing" >
+      <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed element"/>
+      <p className="contact">Coming Soon! <br/>Under Construction</p>
+ 
     </div>;
 
 
@@ -58,7 +59,7 @@ class Landing extends React.Component {
       <h2> login </h2>
       <AuthForm type="login" onComplete={this.handleLogin} />
       <p> Don&#39;t have an account? </p>
-      <Link to="/signup"> signup </Link>
+      <Link to="/signup">signup </Link>
     </div>;
     switch (pathname) {
       case routes.ROOT_ROUTE:
