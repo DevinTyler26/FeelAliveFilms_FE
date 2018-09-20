@@ -38,11 +38,11 @@ class Landing extends React.Component {
 
   renderJSX = (pathname) => {
     const rootJSX = // eslint-disable-line 
-
-    <div className="landing" >
-      <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed element"/>
-      <p className="contact">Coming Soon!<br/>Under Construction</p>
- 
+    <div className="background">
+      <div className="landing" >
+        <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed element"/>
+        <p className="contact">Coming Soon!<br/>Under Construction</p>
+      </div>
     </div>;
 
 
