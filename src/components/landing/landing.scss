@@ -4,15 +4,15 @@
   margin:0 auto;
   text-align:center;
   background-color:rgba(0,0,0,0.3);
-  height: 1000px;
+  height: 900px;
+  overflow: hidden;
 }
 
-.background{
+body{
   background-image: url(../../assets/fafBackground.png);
   background-size: cover;
-  width: 100%;
   resize: both;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 img {
