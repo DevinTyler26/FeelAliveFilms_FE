@@ -28,6 +28,7 @@ img {
 @keyframes stretch {
   0% {
     transform: scale(.01);
+    opacity: .1;
     // background-color: red;
     // border-radius: 100%;
   }
@@ -37,18 +38,32 @@ img {
   }
   86% {
     transform: scale(1.04);    
+    opacity: .9;    
   }
   100% {
     transform: scale(1);
+    opacity: 1;
     // background-color: yellow;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .landing {
+    margin:2% auto;
+  }
   img {
     width: 60%;
   }
   .contact{
     margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  img {
+    width: 50%;
+  }
+  .contact{
+    margin-top: 2%;
   }
 }

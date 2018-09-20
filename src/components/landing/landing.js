@@ -41,7 +41,7 @@ class Landing extends React.Component {
 
     <div className="landing" >
       <img src={ fafLogo } alt="Feel Alive Films Logo" className="faflogo shadowed element"/>
-      <p className="contact">Coming Soon! <br/>Under Construction</p>
+      <p className="contact">Coming Soon!<br/>Under Construction</p>
  
     </div>;
 
