@@ -4,15 +4,14 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  height: 46px;
+  height: 60px;
   list-style: none !important;
   
   li {
     float: left;
     list-style: none !important;
-    img {
-      width: 7em;
-    }
+    height: 100%;
+    font-size: 180%;
   }
   li a {
     display: block;
@@ -26,4 +25,17 @@ ul {
   li a:hover {
     background-color: #111;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  ul {
+    height: 46px;
+    list-style: none !important;
+
+    li {
+      margin: 0 auto;      
+      float: left;
+      font-size: 100%;
+  }
+}
 }
