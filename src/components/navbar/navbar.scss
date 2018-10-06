@@ -1,17 +1,17 @@
-ul {
+ul {  
   list-style-type: none;
   margin-left: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  height: 60px;
   list-style: none !important;
+
   
   li {
-    float: left;
     list-style: none !important;
     height: 100%;
-    font-size: 180%;
+    font-size: 100%;
+    font-style: bold;
   }
   li a {
     display: block;
@@ -23,7 +23,10 @@ ul {
     
   }
   li a:hover {
+    transition-duration: .5s;
     background-color: #111;
+    font-weight: bold;
+    border-radius: 30px;
   }
 }
 
