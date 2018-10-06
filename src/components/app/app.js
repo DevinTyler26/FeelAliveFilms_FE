@@ -28,7 +28,7 @@ export default class App extends React.Component {
             {/* <Route exact path="/garages" component={Garage} />             */}
           </div>
         </BrowserRouter>
-        <footer className="footer"> © Feel Alive Films - 2018</footer>
+        <footer className="footer"> <p className="footer-text">© Feel Alive Films - 2018</p></footer>
       </div>
     );
   }
